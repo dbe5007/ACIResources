@@ -32,8 +32,33 @@ Here are some basic tips for starting out using terminal:
 
 **Spaces are not your friend!**
 - Spaces are the natural enemy to anything done or read on the command line and should be avoided at all costs. There are some ways to work with them, but 99/100 times they will cause whatever command you’re trying to run to not work and crash. Instead, use an underscore to provide some break in the text but keeping the name contiguous.
+
 **Tab**
 - Because the command line is not point and click, you (normally) need to type out all folders and files you want to access. One way to speed this up is to use the tab key. Using tab will autocomplete some or all of the text with an associated letter or prefix. For example, if you are in a directory with 1 folder beginning with ‘s’, and you begin to type the name to change to it, simply typing ‘s’ and hitting tab will complete the folder name without you having to type it all out. If there are multiple folders beginning with that character, hitting tab will list out the possibilities of what would complete the name for you to more easily type out.
 
+
+
+
+Here are some basic commands for navigating through terminal (also a helpful website here). Many of these can provide more information by adding ‘--help’ after the command or through internet searches:
+
+- **ls** – List all folders and files in that directory. Folders are listed first in numerical then alphabetical order, followed by files in the same order.
+- **pwd** – Gives you the directory (folder) you are currently in, the present working directory.  
+- **cd** – Change directory. Use this followed by the folder name or path to move to that directory.
+
+Commands for folder/file manipulation
+
+- **mkdir** – Creates a directory of a given name (e.g. mkdir newFolder)
+- **rm** – Removes/deletes a file or directory. The flag ‘-r’ must be included after this to delete a directory.
+- **cp** – Copy a file/folder to a new location (e.g. cp newText.txt /new/folder/here).
+- **mv** – Move a file/folder to a new location (e.g. mv newText.txt /new/folder/here)
+- **touch** – Create an empty file, such as a text or zip file.
+
+Below are some intermediate commands. They have more specialized purposes and will not be needed as much as the commands above
+
+- **echo** – Multiple purposes
+- **cat** – 
+- **nano/vi** – 
+- **zip/unzip** – 
+- **chmod** – 
 
 
