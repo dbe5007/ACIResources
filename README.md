@@ -58,10 +58,10 @@ As mentioned, ACI is a Linux based system and as such all possible tasks can be 
 
 **Below are some intermediate commands. They have more specialized purposes and will not be needed as much as the commands above**
 
-- **echo** – Multiple purposes
-- **cat** – 
-- **nano/vi** – 
-- **zip/unzip** – 
-- **chmod** – 
+```echo``` – Used to print text or variable information into terminal console. Can also be used to print text into separate text file (e.g. )
+```cat``` – Print file contents into terminal window
+```nano/vi``` – Text editor inside bash environment
+```zip/unzip``` – Compress or uncompress file
+```chmod``` – Change permissions of file or folder
 
 
