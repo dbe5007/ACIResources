@@ -3,6 +3,8 @@
 
 *Contact: delbich10@gmail.com*
 
+Note: ACIManual.docx is a Word formatted version of this README.
+
 *Getting Started*
 
 Advanced CyberInfrastructure (ACI) is a high powered computing system. This is a Linux based system and is best used through the command line (e.g. Terminal, bash shell scripting). There is a GUI (graphical user interface) access to the system which will take you to a Linux desktop for more point and clicker interfacing. It is critical to note that the GUI interface is where low resource tasks should be performed, such as viewing MRI data or working on scripts/data pipelines. More high resource tasks, such as preprocessing a large batch of subject data (e.g. things that will take hours, not minutes) should NOT be run here as they take away computing resources from all users and is against ICS protocols. 
@@ -76,7 +78,10 @@ As mentioned, ACI is a Linux based system and as such all possible tasks can be 
     ```cd /path/to/long/directory/and/the/sub/folder/within/it```
 
     Variable:
-    ```folder = /path/to/long/directory/and/the/sub/folder/within/it```
-    ```cd $folder```
+    ```folder = /path/to/long/directory/and/the/sub/folder/within/it; cd $folder```
 
 
+
+## Associated Code
+
+```createPBSScript.sh``` Short bash script to create and run PBS scripts
