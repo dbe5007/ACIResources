@@ -72,11 +72,11 @@ As mentioned, ACI is a Linux based system and as such all possible tasks can be 
 - Syntax
   - Because linux is also a programming language like Matlab or R, you can set items like variables to help yourself do tasks. For example, file paths can be set to variables in order to navigate faster:
 
-Long way:
-cd /path/to/long/directory/and/the/sub/folder/within/it
+    Long way: 
+    ```cd /path/to/long/directory/and/the/sub/folder/within/it```
 
-Variable:
-folder = /path/to/long/directory/and/the/sub/folder/within/it
-cd $folder
+    Variable:
+    ```folder = /path/to/long/directory/and/the/sub/folder/within/it```
+    ```cd $folder```
 
 
