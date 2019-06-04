@@ -28,7 +28,7 @@ where ‘ACCESSID’ is your access ID (e.g. abc123). You will be prompted to en
 **Important note:**
 As mentioned, ACI is a Linux based system and as such all possible tasks can be run through the command line. While very useful, this can present some potential issues when beginning to learn to use this utility. The most important rule is to always be sure you are running the correct command to the best of your knowledge. Be sure you are deleting the correct file, moving the correct folder, or renaming the correct set of data. Because this is not point and click, there is no ‘undo’ command – once its done, its done. When learning this skill or testing out some new code, it is recommended to test whatever you’re writing on a separate set of data or files (e.g. NOT raw data) to be sure the outcomes are what you intended, so as to avoid uncorrectable errors. Data on ACI is backed up to protect from sudden losses, but this should not always be expected to happen.
 
-Here are some basic tips for starting out using terminal:
+**Here are some basic tips for starting out using terminal:**
 
 **Spaces are not your friend!**
 - Spaces are the natural enemy to anything done or read on the command line and should be avoided at all costs. There are some ways to work with them, but 99/100 times they will cause whatever command you’re trying to run to not work and crash. Instead, use an underscore to provide some break in the text but keeping the name contiguous.
@@ -36,7 +36,7 @@ Here are some basic tips for starting out using terminal:
 **Tab**
 - Because the command line is not point and click, you (normally) need to type out all folders and files you want to access. One way to speed this up is to use the tab key. Using tab will autocomplete some or all of the text with an associated letter or prefix. For example, if you are in a directory with 1 folder beginning with ‘s’, and you begin to type the name to change to it, simply typing ‘s’ and hitting tab will complete the folder name without you having to type it all out. If there are multiple folders beginning with that character, hitting tab will list out the possibilities of what would complete the name for you to more easily type out.
 
-Here are some basic commands for navigating through terminal (also a helpful website here). Many of these can provide more information by adding ‘--help’ after the command or through internet searches:
+**Here are some basic commands for navigating through terminal (also a helpful website here). Many of these can provide more information by adding ‘--help’ after the command or through internet searches:**
 
 ```ls``` – List all folders and files in that directory. Folders are listed first in numerical then alphabetical order, followed by files in the same order.
 
@@ -44,7 +44,7 @@ Here are some basic commands for navigating through terminal (also a helpful web
 
 ```cd``` – Change directory. Use this followed by the folder name or path to move to that directory.
 
-Commands for folder/file manipulation
+**Commands for folder/file manipulation**
 
 ```mkdir``` – Creates a directory of a given name (e.g. mkdir newFolder)
 
@@ -56,7 +56,7 @@ Commands for folder/file manipulation
 
 ```touch``` – Create an empty file, such as a text or zip file
 
-Below are some intermediate commands. They have more specialized purposes and will not be needed as much as the commands above
+**Below are some intermediate commands. They have more specialized purposes and will not be needed as much as the commands above**
 
 - **echo** – Multiple purposes
 - **cat** – 
