@@ -46,11 +46,15 @@ Here are some basic commands for navigating through terminal (also a helpful web
 
 Commands for folder/file manipulation
 
-```mkdir``` – Creates a directory of a given name (e.g. mkdir newFolder) 
-```rm``` – Removes/deletes a file or directory. The flag ‘-r’ must be included after this to delete a directory 
-```cp``` – Copy a file/folder to a new location (e.g. cp newText.txt /new/folder/here) 
-```mv``` – Move a file/folder to a new location (e.g. mv newText.txt /new/folder/here) 
-```touch``` – Create an empty file, such as a text or zip file 
+```mkdir``` – Creates a directory of a given name (e.g. mkdir newFolder)
+
+```rm``` – Removes/deletes a file or directory. The flag ‘-r’ must be included after this to delete a directory
+
+```cp``` – Copy a file/folder to a new location (e.g. cp newText.txt /new/folder/here)
+
+```mv``` – Move a file/folder to a new location (e.g. mv newText.txt /new/folder/here)
+
+```touch``` – Create an empty file, such as a text or zip file
 
 Below are some intermediate commands. They have more specialized purposes and will not be needed as much as the commands above
 
