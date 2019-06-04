@@ -36,7 +36,7 @@ As mentioned, ACI is a Linux based system and as such all possible tasks can be 
 **Tab**
 - Because the command line is not point and click, you (normally) need to type out all folders and files you want to access. One way to speed this up is to use the tab key. Using tab will autocomplete some or all of the text with an associated letter or prefix. For example, if you are in a directory with 1 folder beginning with ‘s’, and you begin to type the name to change to it, simply typing ‘s’ and hitting tab will complete the folder name without you having to type it all out. If there are multiple folders beginning with that character, hitting tab will list out the possibilities of what would complete the name for you to more easily type out.
 
-**Here are some basic commands for navigating through terminal (also a helpful website here). Many of these can provide more information by adding ‘--help’ after the command or through internet searches:**
+**Here are some basic commands for navigating through terminal (also a helpful website: https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners). Many of these can provide more information by adding ‘--help’ after the command or through internet searches:**
 
 ```ls``` – List all folders and files in that directory. Folders are listed first in numerical then alphabetical order, followed by files in the same order.
 
@@ -58,10 +58,25 @@ As mentioned, ACI is a Linux based system and as such all possible tasks can be 
 
 **Below are some intermediate commands. They have more specialized purposes and will not be needed as much as the commands above**
 
-```echo``` – Used to print text or variable information into terminal console. Can also be used to print text into separate text file (e.g. )
+```echo``` – Used to print text or variable information into terminal console. Can also be used to print text into separate text file (e.g. ```echo text line here >> newFile.txt```)
+
 ```cat``` – Print file contents into terminal window
+
 ```nano/vi``` – Text editor inside bash environment
+
 ```zip/unzip``` – Compress or uncompress file
+
 ```chmod``` – Change permissions of file or folder
+
+**Intermediate Tips**
+- Syntax
+  - Because linux is also a programming language like Matlab or R, you can set items like variables to help yourself do tasks. For example, file paths can be set to variables in order to navigate faster:
+
+Long way:
+cd /path/to/long/directory/and/the/sub/folder/within/it
+
+Variable:
+folder = /path/to/long/directory/and/the/sub/folder/within/it
+cd $folder
 
 
