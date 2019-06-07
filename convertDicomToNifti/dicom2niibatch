@@ -59,8 +59,8 @@ fi
 
 ###Setup###
 dcm2niipath='/path/to/folder/with/dcm2niix/program'
-dataDir=/path/to/parent/folder
-mkdir -p $dataDir/data
+projectDir=/path/to/parent/folder
+mkdir -p $dataDir/NIIDATA
 
 for ((i=0; i<${#subs[@]}; i++))
 do
@@ -68,16 +68,16 @@ do
 subject=${subs[i]}
 
 ##Make output folders##
-mkdir -p $dataDir/data/"sub-"$subject/anat
-mkdir -p $dataDir/data/"sub-"$subject/func
+mkdir -p $projectDir/NIIDATA/"sub-"$subject/anat
+mkdir -p $projectDir/NIIDATA/"sub-"$subject/func
 
 ##Set File Paths##
-dataset1=$dataDir/$subject/FOLDERNAME
-dataset2=$dataDir/$subject/FOLDERNAME
+dataset1=$dataDir/RAWDATA/$subject/FOLDERNAME
+dataset2=$dataDir/RAWDATA/$subject/FOLDERNAME
 
-##Convert to NIFTI with BIDS Compliant Naming!!!!##
+##Convert to NIFTI with BIDS Compliant Naming##
 $dcm2niipath/dcm2niix -z i -f "sub-"$subject"_T1w" -o $dataDir/data/"sub-"$subject/anat $dataset1
-$dcm2niipath/dcm2niix -z i -f "sub-"$subject"_task-TASKNAME2_bold" -o $dataDir/data/"sub-"$subject/func $dataset2
+$dcm2niipath/dcm2niix -z i -f "sub-"$subject"_task-TASKNAME1_bold" -o $dataDir/data/"sub-"$subject/func $dataset2
 
 
 done
