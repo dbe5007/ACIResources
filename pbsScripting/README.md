@@ -5,11 +5,11 @@
 
 *Contact: delbich10@gmail.com*
 
-*Getting Started*
+### Getting Started
 
 PBS jobs are lines of code or scripts which are sent to the batch portion of the cluster. This cluster has dedicated resources for high computation tasks and can be faster than running code on the interactive node (see ACIManual). The only way to interact with this portion is through the command line. This can be done by either connecting to aci-b separately from your local machine or by logging into aci-i and submitting a job through the terminal there.
 
-*Required Flags of a PBS Script*
+### Required Flags of a PBS Script
 
 The PBS system has many different options and flags to include (see below), but there are only a few that are required to run a job successfully.
 
@@ -42,7 +42,7 @@ where ```USERNAME``` is your user ID. This will return terminal output with the 
 
 Now as with all computing you can increase the numbers of nodes, ppn, and pmem and the scripts will run more quickly. However there are 2 things to consider here. First of which is what allocation you are using. Most reservations have some limitation on the resources (as more costs more money) and you will have to work within the bounds of this. Second, your job may be stuck in the queue waiting until the amount of resources you request become available. If multiple people are running jobs & using resources, your job can be stuck waiting until resources become free. You will need to do some experimenting on how long your job should take and what resources you have available to find the right balance.
 
-*Optional Flags of a PBS Script*
+### Optional Flags of a PBS Script
 
 There are a number of optional flags in the PBS system that can be incredibly useful depending on your needs. The following are possible flags you can include (written in PBS notation):
 
