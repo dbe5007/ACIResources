@@ -5,7 +5,7 @@ Repository for training and how-to manuals for working on the high performance c
 
 *pbsScripting* Manual for creating and running PBS scripts on the ACI batch system. Includes shell program for automated creating of job scripts
 
-*convertingDicomToNifti* COMING SOON!!! Manual for working in MRI data on the system, including how to convert data to standard NIFTI format
+*convertingDicomToNifti* Manual for working in MRI data on the system, including how to convert data to standard NIFTI format
 
 *fmriprep* COMING SOON!!! Manual for setting up and running fmriprep, a standardized pipeline for MR data preprocessing (https://fmriprep.readthedocs.io/en/stable/index.html)
 
