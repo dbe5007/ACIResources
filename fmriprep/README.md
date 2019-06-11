@@ -32,6 +32,10 @@ Again this will have errors trying to run the if the data are not organized in B
 
 The script ```createPBSScriptfmriprep.sh``` will create PBS scripts to run the default pipeline. Simply change the file paths to correspond with the data directories location of the fmriprep module. Include ```--help``` to see additional options for that script.
 
+### Reading the Output
+
+fmriprep will take around 8 hours to complete the complete pipeline. This time will also depend on the processing resources allocated to the job. Upon completion, navigate to the output directory you specified in the ```fmriprep``` command. There will be 2 new folders, an fmriprep folder and a freesurfer folder. The freesurfer folder will contain all files relating to freesurfer’s processing of the anatomical image. The fmriprep folder will contain all files (and output) related to functional data processing and registration to the T1 structure and standard space (if specified). There will also be a report of the processing steps and results in the form of an .html file, which can be opened in any browser. This will be the first round of QA to check for registration, signal dropout, and data quality metrics (e.g. motion). Within each folder (anat, func) you will find the newly processed data to use in your processing program of choice. 
+
 
 ### Optional Flags
 
