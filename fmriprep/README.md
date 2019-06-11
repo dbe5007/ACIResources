@@ -33,7 +33,7 @@ Again this will have errors trying to run the if the data are not organized in B
 
 ### Optional Flags
 
-fmriprep does include optional arguments that can change the preprocessing choices. Below are just a few of the more pertinent choices (in my opinion), however using the flag ‘--help’ will give you the full list. Please also see the website (https://fmriprep.readthedocs.io/en/stable/#) for more details.
+fmriprep does include optional arguments that can change the preprocessing choices. Below are just a few of the more pertinent choices (in my opinion), however using the flag ```--help``` will give you the full list. Please also see the [fmriprep website](https://fmriprep.readthedocs.io/en/stable/#) for more details.
 
 Options for filtering BIDS queries:
 ```
