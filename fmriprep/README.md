@@ -30,6 +30,8 @@ Once the package is loaded, you can begin to preprocess data. The 3 absolute req
 
 Again this will have errors trying to run the if the data are not organized in BIDS style formatting to ensure this is correct.
 
+The script ```createPBSScriptfmriprep.sh``` will create PBS scripts to run the default pipeline. Simply change the file paths to correspond with the data directories location of the fmriprep module. Include ```--help``` to see additional options for that script.
+
 
 ### Optional Flags
 
