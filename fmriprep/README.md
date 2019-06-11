@@ -7,13 +7,13 @@
 
 ### Getting Started
 
-fmriprep is an preprocessing pipeline for fMRI data developed by the Poldrack lab at Standford. It is an amalgamation of multiple data processing programs, bringing together the best of each to form a single unified pipeline. The aim to develop a pipeline which is robust for all functional data & scanner types, requires minimal user input, and be as transparent as possible about the choices made for preprocessing data. This package is undergoing continuous upgrading as newer/better software becomes available, so be sure to check their [website](https://fmriprep.readthedocs.io/en/stable/#) for the most current updates. Any necessary upgrades to the program should be sent as a software request to ACI support.
+fmriprep is a preprocessing pipeline for fMRI data developed by the Poldrack lab at Standford. It is an amalgamation of multiple data processing programs, bringing together the best of each to form a single unified pipeline. The aim to develop a pipeline which is robust for all functional data & scanner types, requires minimal user input, and be as transparent as possible about the choices made for preprocessing data. This package is undergoing continuous upgrading as newer/better software becomes available, so be sure to check their [website](https://fmriprep.readthedocs.io/en/stable/#) for the most current updates. Any necessary upgrades to the program should be sent as a software request to ACI support.
 
 ### Quick Need to Know
 
 There are 2 important items to note before actually executing fmriprep. The first is that fmriprep was designed to use the [BIDS style](https://bids.neuroimaging.io/) formatting for MR data. Therefore, I recommend that any data processed by the package should be in the BIDS formatting instead of being skipped.
 
-Second, the package is very particular about how information is formatted to be read into the program. For example, the program only uses NIfTI files as data inputs. In addition, each set of data must have an accompanying .json file which details important aspects of data collection, such as TR or slice timing. This is less needed for the structural image but is absolutely essential for any functional data. If this file is missing the package will not run. If there are unexpected values the program will crash. Also, if your installation is on a cluster the package could have difficulty accessing licensed software that is installed in root directories (e.g. Freesurfer). It is recommended you setup a single subject first and run that data through the pipeline to debug for errors. 
+Second, the package is very particular about how information is formatted to be read into the program. For example, the program only uses gunzip NIfTI files as data inputs. In addition, each set of data must have an accompanying .json file which details important aspects of data collection, such as TR or slice timing. This is less needed for the structural image but is absolutely essential for any functional data. If this file is missing the package will not run. If there are unexpected values the program will crash. Also, if your installation is on a cluster the package could have difficulty accessing licensed software that is installed in root directories (e.g. Freesurfer). It is recommended you setup a single subject first and run that data through the pipeline to debug for errors. 
 
 ### Executing the package
 
@@ -28,7 +28,7 @@ Once the package is loaded, you can begin to preprocess data. The 3 absolute req
 
 ```fmriprep /path/to/data/dir /path/to/output/dir {participant}```
 
-Again this will have errors trying to run the if the data are not organized in BIDS style formatting to ensure this is correct.
+Again this will have errors trying to run the if the data are not organized in BIDS style formatting to ensure this is correct. If any errors in processing do occur, refer to the [neurostars](https://neurostars.org/) website, the ongoing forum for fmriprep.
 
 The script ```createPBSScriptfmriprep.sh``` will create PBS scripts to run the default pipeline. Simply change the file paths to correspond with the data directories location of the fmriprep module. Include ```--help``` to see additional options for that script.
 
