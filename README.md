@@ -1,5 +1,5 @@
 # aciResources
-Repository for training and how-to manuals for working on the high performance computing server as Penn State. Written in conjunction with the Karuza Lab and Cognitive Neuroscience of Creativity Lab.
+Repository for training and how-to manuals for working on the high performance computing server as Penn State.
 
 **ACIManual.docx** Working document accessing and using the ACI system. Includes some basic Linux functions.
 
